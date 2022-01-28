@@ -63,6 +63,11 @@ Route::get('/contact',[\App\Http\Controllers\SiteController::class,'Contact']);
 //Route::get('/name/{nameValue}',[\App\Http\Controllers\SiteController::class,'infoName']);
 
 
+//
+////routing with multiple parameter
+//Route::get('/name/{fname}/{lname}',[\App\Http\Controllers\SiteController::class,'fullname']);
 
-//routing with multiple parameter
+
+
+//routing with  parameter controller to view
 Route::get('/name/{fname}/{lname}',[\App\Http\Controllers\SiteController::class,'fullname']);

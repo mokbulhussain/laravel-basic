@@ -46,10 +46,17 @@ class SiteController extends Controller
     }
 
 
-
     //routing with multipule parameter
+//    function fullname($fname,$lname){
+//        return "First Name ".$fname ."Last name " .$lname;
+//    }
+
+
+
+
+    // basic routing parameter controller to view
     function fullname($fname,$lname){
-        return "First Name ".$fname ."Last name " .$lname;
+        return view('demoView',['fname'=>$fname,'lname'=>$lname]);
     }
 
 
