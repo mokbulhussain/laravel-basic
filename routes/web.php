@@ -95,5 +95,9 @@ Route::group(['prefix'=>'account'],function(){
 
 
 // custom controller
-Route::get('/',[\App\Http\Controllers\CustomController::class,'mySelf']);
-Route::get('/yourSelf',[\App\Http\Controllers\CustomController::class,'yourSelf']);
+//Route::get('/',[\App\Http\Controllers\CustomController::class,'mySelf']);
+//Route::get('/yourSelf',[\App\Http\Controllers\CustomController::class,'yourSelf']);
+
+
+// passing data from controller to view
+Route::get('/',[\App\Http\Controllers\Homecontroller::class,'home']);
