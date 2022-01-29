@@ -70,4 +70,19 @@ Route::get('/contact',[\App\Http\Controllers\SiteController::class,'Contact']);
 
 
 //routing with  parameter controller to view
-Route::get('/name/{fname}/{lname}',[\App\Http\Controllers\SiteController::class,'fullname']);
+//Route::get('/name/{fname}/{lname}',[\App\Http\Controllers\SiteController::class,'fullname']);
+
+
+// basic routing group
+Route::group(['prefix'=>'account'],function(){
+    Route::get('/profile',function(){
+        return 'profile';
+    });
+    Route::get('/login',function(){
+        return 'login';
+    });
+
+    Route::get('/profileUpdate',function(){
+        return 'profileUpdate';
+    });
+});
