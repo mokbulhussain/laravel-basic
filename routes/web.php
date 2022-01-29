@@ -89,4 +89,11 @@ Route::group(['prefix'=>'account'],function(){
 });
 */
 
-Route::get('/', \App\Http\Controllers\SingleController::class);
+
+//single contrller
+//Route::get('/', \App\Http\Controllers\SingleController::class);
+
+
+// custom controller
+Route::get('/',[\App\Http\Controllers\CustomController::class,'mySelf']);
+Route::get('/yourSelf',[\App\Http\Controllers\CustomController::class,'yourSelf']);
