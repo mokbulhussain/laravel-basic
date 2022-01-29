@@ -74,6 +74,7 @@ Route::get('/contact',[\App\Http\Controllers\SiteController::class,'Contact']);
 
 
 // basic routing group
+/*
 Route::group(['prefix'=>'account'],function(){
     Route::get('/profile',function(){
         return 'profile';
@@ -86,3 +87,6 @@ Route::group(['prefix'=>'account'],function(){
         return 'profileUpdate';
     });
 });
+*/
+
+Route::get('/', \App\Http\Controllers\SingleController::class);
