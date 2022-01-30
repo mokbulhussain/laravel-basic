@@ -100,4 +100,9 @@ Route::group(['prefix'=>'account'],function(){
 
 
 // passing data from controller to view
-Route::get('/',[\App\Http\Controllers\Homecontroller::class,'home']);
+//Route::get('/',[\App\Http\Controllers\Homecontroller::class,'home']);
+
+
+//Route::get('/',[\App\Http\Controllers\Homecontroller::class,'mainHome']);
+
+Route::get('/',[\App\Http\Controllers\Homecontroller::class,'masterHome']);
